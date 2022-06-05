@@ -1,0 +1,33 @@
+﻿<Window x:Name="Rides" x:Class="ICS.Project.App.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICS.Project.App.Views"
+        xmlns:viewModels="clr-namespace:ICS.Project.App.ViewModels"
+        mc:Ignorable="d"
+        Title="Rides" 
+        Height="600" 
+        Width="900"
+        Background="#505050"
+        d:DataContext="{d:DesignInstance viewModels:UserDetailViewModel}"
+        >
+    <Grid>
+
+        <TextBlock Margin="10" Foreground="DarkCyan" FontSize="40" Grid.ColumnSpan="2" RenderTransformOrigin="0.538,0.301">
+            <Bold Foreground="LightGray">ICS Project</Bold>
+        </TextBlock>
+
+        <TextBlock Margin="0,150,0,150" Foreground="Gray" FontSize="40" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Column="1" RenderTransformOrigin="0.494,0.488">
+            <Bold Foreground="LightGray">Enter your name</Bold>
+        </TextBlock>
+
+        <StackPanel Margin="10,221,10,203" >
+            <TextBox Height="40" Width="380"/>
+            <Button Height="40" Width="200" RenderTransformOrigin="0.511,0.867" Margin="17" FontSize="20" FontWeight="DemiBold" Click="OpenSelector">
+                Submit</Button>
+        </StackPanel>
+
+    </Grid>
+
+</Window>

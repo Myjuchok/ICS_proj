@@ -1,0 +1,52 @@
+﻿<Window x:Class="ICS.Project.App.ChangeUserDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICS.Project.App"
+        mc:Ignorable="d"
+        Title="Change user detail" 
+        Height="600" 
+        Width="900"
+        Background="#505050">
+    <Grid>
+        <Border Margin="50,50,600,300" Background="LightGray">
+            
+        </Border>
+        <TextBlock Margin="475,10,155,539" HorizontalAlignment="Center" FontSize="25" FontWeight="SemiBold">
+            Details
+        </TextBlock>
+        <StackPanel Margin="350,50,300,130">
+            <TextBlock Margin="15" Height="30" FontSize="25" FontWeight="SemiBold" HorizontalAlignment="Right">
+                Manufacturer
+            </TextBlock>
+            <TextBlock Margin="15" Height="30" FontSize="25" FontWeight="SemiBold" HorizontalAlignment="Right">
+                Type
+            </TextBlock>
+            <TextBlock Margin="15" Height="30" FontSize="25" FontWeight="SemiBold" HorizontalAlignment="Right">
+                Owner
+            </TextBlock>
+            <TextBlock Margin="15" Height="30" FontSize="25" FontWeight="SemiBold" HorizontalAlignment="Right">
+                Seats
+            </TextBlock>
+            <TextBlock Margin="15" Height="30" FontSize="25" FontWeight="SemiBold" HorizontalAlignment="Right">
+                Date of registration
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Margin="600,50,10,130">
+            <TextBox Margin="15" Height="30" />
+            <TextBox Margin="15" Height="30" />
+            <TextBox Margin="15" Height="30" />
+            <TextBox Margin="15" Height="30" />
+            <TextBox Margin="15" Height="30" />
+        </StackPanel>
+        <Grid Margin="350,454,10,10">
+            <Button Margin="315,45,75,45" Height="30" Width="150" FontSize="20" FontWeight="DemiBold" Click="OpenProfile">
+                Cancel
+            </Button>
+            <Button Margin="75,45,315,45" Height="30" Width="150" FontSize="20" FontWeight="DemiBold">
+                Add vehicles
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
